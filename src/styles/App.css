@@ -1,0 +1,15 @@
+/* App Container - Tema Oscuro */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}

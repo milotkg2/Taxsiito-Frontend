@@ -1,0 +1,226 @@
+/* Registro Page Styles - Tema Oscuro */
+
+.registro-main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.registro-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.registro-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+/* Decoracion */
+.registro-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.decoration-circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+.circle-1 {
+  width: 400px;
+  height: 400px;
+  background: #facc15;
+  top: -200px;
+  right: -150px;
+}
+
+.circle-2 {
+  width: 250px;
+  height: 250px;
+  background: #3b82f6;
+  bottom: -100px;
+  left: -100px;
+}
+
+.circle-3 {
+  width: 150px;
+  height: 150px;
+  background: #facc15;
+  top: 50%;
+  left: -75px;
+}
+
+/* Content */
+.registro-content {
+  position: relative;
+  z-index: 1;
+}
+
+.registro-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.registro-subtitle {
+  color: #a1a1aa;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* Form */
+.registro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-label {
+  color: #d4d4d8;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input::placeholder {
+  color: #71717a;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #facc15;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.15);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2371717a'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1.25rem;
+  padding-right: 2.5rem;
+}
+
+.form-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-select option {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.9rem;
+  padding: 0.75rem 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  text-align: center;
+}
+
+.registro-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.registro-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.registro-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Login Prompt */
+.login-prompt {
+  text-align: center;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+.login-link {
+  color: #facc15;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #fde047;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .registro-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .registro-title {
+    font-size: 2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
